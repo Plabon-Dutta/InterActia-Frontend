@@ -1,0 +1,261 @@
+body {
+    background-color: #dff0ea;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background-color: #7db8a4;
+    height: 100vh;
+    padding: 20px;
+}
+
+.chat-box {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.chat-input {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.card-custom {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.notification-icon {
+    padding-top: 20%;
+    justify-content: right !important;
+}
+
+.message-icon {
+    padding-top: 20%;
+    justify-items: right;
+}
+
+.custom-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    border: none;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.send-message {
+    background: transparent;
+    border: 2px solid #90B4AE;
+    color: #90B4AE;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.send-message:hover {
+    background-color: #DCF0EB;
+    color: #90B4AE;
+}
+
+.calendar-card {
+    background: #C2EDCE;
+}
+
+.card-custom1 {
+    background-color: rgb(232, 227, 227);
+    border-radius: 10%;
+    position: relative;
+}
+
+.details-card {
+    position: absolute;
+    padding-top: 3%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.line {
+    position: absolute;
+    top: 20%;
+}
+
+.contact-card {
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    background-color: #7DC8CD;
+    border-radius: 10%;
+}
+
+.contact-icons {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #8EE7F0;
+    align-content: center;
+}
+
+.active {
+    background-color: white;
+    /* Highlighted active stage */
+}
+
+.chatbox {
+    width: 580px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background: white;
+    color: black;
+    padding: 10px;
+    /* text-align: center; */
+    /* font-weight: bold; */
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    max-width: 80%;
+}
+
+.chat-message.bot {
+    background: #f5f5f5;
+    align-self: flex-start;
+}
+
+.chat-message.user {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-btn.back {
+    background: #dc3545;
+}
+
+.chat-btn:hover {
+    opacity: 0.8;
+}
+
+/* Flow Chatbox Ends Here */
+
+/* Progress bar Starts here */
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    top: 25%;
+}
+
+.stage {
+    text-align: center;
+    width: 150px;
+    position: relative;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}
+
+.completed .icon {
+    background-color: #1E4E5F; /* Darker color for completed stage */
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #CDE7F0;
+    position: relative;
+    top: 20px;
+    margin: 0 10px;
+}
+
+.title {
+    font-weight: bold;
+    color: #6FA7B0;
+    margin-top: 10px;
+}
+
+.desc {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-bar {
+        width: 6px;
+        height: 50px;
+        margin: 10px auto;
+    }
+}
+/* Progress bar ends here */

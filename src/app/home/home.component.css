@@ -1,0 +1,723 @@
+.back-body {
+    background: linear-gradient(to right, #3e868b, #b7e8e2);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.form-control {
+    border-radius: 5px;   
+}
+
+.btn-custom {
+    background-color: #62c7af;
+    color: white;
+    border: none;
+    padding: 4% 13% 4% 13%;
+    border-radius: 0%;
+}
+.btn-custom:hover {
+    background-color: #6ad4a8;
+}
+.contact-info {
+    padding-left: 5%;
+    border-radius: 10px;
+}
+
+img {
+    width: 25%;
+    height: 80%;
+    color: white;
+    margin-top: 2%;
+}
+
+.btn-custom {
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.btn-signup {
+    width: 25%;
+    height: 50%;
+    background-color: #11585a; 
+    color: white;
+    border: none;
+}
+
+.btn-signup:hover {
+    background-color: #337f82;
+}
+
+.btn-login {
+    width: 25%;
+    height: 50%;
+    background-color: #62c7af;
+    color: white;
+    border: none;
+}
+
+.btn-login:hover {
+    background-color: #4a887a;
+}
+
+.custom-form {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 6% 10% 2% 10%;
+}
+
+.map-container iframe {
+    width: 75%;
+    height: 45vh;
+}
+
+/* for side button */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 420%;
+    margin-bottom: 15%;
+}
+.side-button {
+    width: 50px;
+    height: 50px;
+    background-color: #4caf97;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    img {
+        width: 80%;
+        height: 80%;
+        padding-left: 20%;
+    }
+
+    .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .custom-form {
+        margin-top: 3%;
+    }
+
+    .buttons {
+        margin-top: 4%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .btn-custom {
+        padding: 1% 2% 2% 1%;
+    }
+
+    .side-icons {
+        padding-left: 0%!important;
+    }
+
+    .side-icons-gap {
+        gap: 2%!important;
+    }
+
+    .btn-signup {
+        width: 20%;
+        height: 80%;
+    }
+
+    .btn-login {
+        width: 20%;
+        height: 80%;
+    }
+
+    .signup-text {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0%;
+    }
+
+    .not-reg-user {
+        padding-top: 0%;
+        padding-right: 1%;
+    }
+
+    .support-text {
+        font-size: 90% !important;
+    }
+
+    .support-text p {
+        margin-top: 15% !important;
+    }
+
+    .close-btn {
+        color: black !important;
+    }
+
+    .branding-section {
+        border-top-left-radius: 0% !important;
+        border-bottom-left-radius: 0% !important;
+    }
+
+    .chatbot-content {
+        width: 90% !important;
+        height: 60vh;
+    }
+
+    .chatbot-content iframe {
+        width: 90% !important;
+        height: 50vh !important;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+        width: 90% !important;
+        height: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .not-reg-user {
+        padding-top: 1.4%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .side-icons {
+        padding-left: 60% !important;
+    }
+
+    .buttons {
+        margin-top: 595%;
+        margin-bottom: 5%;
+    }
+
+    .custom-form {
+        padding: 1% 10% 2% 10%;
+    }
+
+    .btn-signup {
+        width: 25%;
+        height: 65%;
+    }
+
+    .btn-login {
+        height: 65%;
+    }
+
+    .chatbot-content {
+        width: 40% !important;
+        height: 80vh;
+    }
+
+    .map-container iframe {
+        width: 80%;
+        height: 45vh;
+    }
+}
+
+.not-reg-user {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 100%;
+}
+
+.signup-text {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.call-button {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid #3a8b91;
+    color: #3a8b91;
+    padding: 0px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-button:hover {
+    background-color: rgb(232, 222, 222);
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: #3a8b91;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #9cded6 60%, #48e9ce);
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.row {
+    padding: 0%;
+    margin: 0%;
+}
+
+.side-icons {
+    padding-left: 67%;
+}
+
+.side-icons-gap {
+    gap: 1%;
+}
+
+.row-footer {
+    height: 8.6vh;
+}
+
+.footer-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.support-text {
+    font-size: 110%;
+    margin-left: 1%;
+    color: #474747;
+}
+
+.support-text p {
+    margin-top: 14%;
+}
+
+/* testing section for popup */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    border-radius: 0px;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  
+/* styles for signup section */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.signup-form {
+    width: 100%;
+    padding: 20px;
+}
+
+.signup-form h2, label {
+    color: #388087;
+}
+
+.signup-form input::placeholder {
+    color: gray;
+    opacity: 0.5;
+    font-size: small;
+}
+
+.signup-form a {
+    color: #388087;
+}
+
+/* Login Page styles */
+
+.signin-form {
+    width: 100%;
+    padding: 20px;
+}
+
+.signin-form h2, label {
+    color: #388087;
+}
+
+.signin-form input::placeholder {
+    color: gray;
+    opacity: 0.5;
+    font-size: small;
+}
+
+.signin-form a {
+    color: #388087;
+}
+
+/* Common styles */
+
+.branding-section {
+    background-color: #85b8a8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: 80%;
+}
+
+.branding-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.branding-section p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: #388087;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #468d94;
+}
+
+
+/* forgot Password section */
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.password-container label {
+    color: #388087; 
+}
+
+.forgot-password {
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+
+.forgot-password:hover {
+    color: #388087;
+    text-decoration: underline;
+}
+
+/* Styles for FAQ */
+
+.faq-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.faq-content {
+    background: #d9ebef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-height: 90vh; /* Restrict height to avoid overflow */
+    overflow: auto; /* Enable scrolling inside FAQ content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    justify-items: center;
+}
+
+.accordion-header button{
+    font-size:small;
+}
+
+.accordion div {
+    font-size: small;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 30%;
+}
+
+.accordion-button {
+    background: linear-gradient(to top, #326483, #35757D);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+.accordion-body {
+    color: white;
+}
+
+.faq-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #337f82;
+    color: white;
+    
+}
+
+/* for plus minus icon */
+
+.accordion-button[aria-expanded="true"] .icon i {
+    transform: rotate(180deg);
+}
+
+/* New Styles for FAQ Page */
+
+/* answer section */
+.accordion-collapse { 
+    background: linear-gradient(to top, #326483, #35757D);
+}
+
+/* for plus minus icon */
+.accordion-button::after {
+    display: none !important; /* Hides Bootstrap's default arrow */
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.icon i {
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-btn {
+    background-color: #BADFE7; /* Light blue background */
+    color: #6b6b6b; /* Grayish text */
+    border-radius: 15px; /* Rounded edges */
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.faq-btn:hover {
+    background-color: #bde0eb; /* Slightly darker on hover */
+}
+
+.faq-icon {
+    font-size: 18px;
+}
+
+.close-btn3 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray !important;
+}
+
+
+/* chatbot styles */
+.chatbot-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center !important;
+    justify-content: right !important;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.chatbot-content {
+    /* background: #d9ebef; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+    max-height: 90vh; /* Restrict height to avoid overflow */
+    overflow: auto; /* Enable scrolling inside FAQ content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: white;
+}
+
+.close-btn4 {
+    position:absolute;
+    top: 6px;
+    right: 16.5px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.chatbot-content iframe {
+    width: 100% !important;
+    height: 80vh;
+}
+
+/* static chatbox styles */
+  
+.chatbot-content h3 {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+    background-color: #388087;
+  }
+  
+  .chat-box {
+    height: 250px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0 0 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  
+  .question {
+    width: 80%;
+    background: #f1f1f1;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .response {
+    background: #d1e7dd;
+    padding: 8px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    text-align: right;
+  }
+  
+  .ques-btn {
+    display: block;
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #40888D;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #1a605e;
+  }
+
+
+  /* Forget Password Section */
+  .forgetpassword-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .forgetpassword-content {
+    background: #d9ebef;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto;
+  }
+
+  .forgetpass-form {
+    margin-top: 5%;
+    width: 50%;
+  }
+
+  .forgetpass-form2 {
+    margin-top: 2%;
+    width: 50%;
+  }
+      

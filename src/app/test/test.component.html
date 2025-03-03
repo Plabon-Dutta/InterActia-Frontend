@@ -1,0 +1,38 @@
+<div class="chatbox">
+  <div class="chat-header">Chatbot</div>
+  <div class="chat-body">
+    <div *ngFor="let message of chatHistory" class="chat-message"
+      [ngClass]="{'bot': message.sender === 'bot', 'user': message.sender === 'user'}">
+      {{ message.text }}
+    </div>
+
+    <div *ngIf="!selectedProject">
+      <div class="chat-message bot">Hello! How can I help you?</div>
+      <div class="chat-options">
+        <button *ngFor="let project of projects" (click)="selectProject(project)" class="chat-btn">
+          {{ project.name}}
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="selectedProject && !selectedQuestion">
+      <div class="chat-options">
+        <button *ngFor="let question of selectedProject.questions" (click)="showSubQuestions(question)"
+          class="chat-btn">{{ question.text }}</button>
+      </div>
+      <button (click)="reset()" class="chat-btn back">Home</button>
+    </div>
+
+    <div *ngIf="selectedQuestion && !selectedSubQuestion">
+      <div class="chat-options">
+        <button *ngFor="let subQuestion of selectedQuestion.subQuestions" (click)="showAnswer(subQuestion)"
+          class="chat-btn">{{ subQuestion.text }}</button>
+      </div>
+      <button (click)="selectedQuestion = null" class="chat-btn back">Back</button>
+    </div>
+
+    <div *ngIf="selectedSubQuestion">
+      <button (click)="selectedSubQuestion = null" class="chat-btn back">Back</button>
+    </div>
+  </div>
+</div>

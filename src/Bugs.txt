@@ -1,0 +1,2 @@
+1. Dropdown Color Issue
+2. login-signup page right part issue
